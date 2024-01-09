@@ -28,6 +28,9 @@ Route::middleware('splade')->group(function () {
     Route::spladeUploads();
 
     Route::get('/', function () {
+        SEO::title('Laravel Splade Course')
+            ->description('Become the Splade expert!')
+            ->keywords('laravel, splade, course');
         return view('welcome');
     });
 
