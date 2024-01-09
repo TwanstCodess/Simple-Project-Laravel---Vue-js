@@ -1,8 +1,9 @@
-<x-splade-data default="{ name: 'Laravel Splade' }">
-    <input v-model="data.name" />
-    <p class="text-red-500">Your name is <span v-text="data.name" /></p>
-</x-splade-data>
+<x-splade-form>
+    <x-splade-input name="search" />
 
+    <x-splade-teleport to="#footer">
+        You are searching for: <span v-text="form.search" />
+    </x-splade-teleport>
+</x-splade-form>
 
-
-
+<div id="footer" class="p-4 bg-green-500 text-white" />
