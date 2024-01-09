@@ -15,6 +15,6 @@
         </div>
     </div>
 
-
+    <Link away href="https://www.google.com">Google</Link>
 
 </x-app-layout>
